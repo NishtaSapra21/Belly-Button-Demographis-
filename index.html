@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12 jumbotron text-center">
+
+        <div class="w3-container w3-cursive">
+        <h1 class="w3-cursive">Belly Button Biodiversity Dashboard</h1>
+        <p class="w3-large">USE THE INTERACTIVE CHARTS BELOW TO EXPLORE THE DATASET</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!--<select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-8" name="information">
+
+        <div class="w3-container w3-cursive">
+          <h2 class="w3-cursive"> Belly Button Demographics</h2>
+
+          <p class="w3-large">
+          Human body is the source of thousands of bacteria. Still many bacteria are unknown and unstudied. This data analysis uses  data of  volunteers’  navel bacterial samples from across the country to make “Demographic Dashboard”  and dynamic display charts using of Plotly, JavaScript, HTML and CSS.
+          </p>
+
+          <p class="w3-large">  
+          Each volunteers who participated in this study given an unique ID. Volunteers and other researchers can see the “Belly Button” data using this dashboard and charts. 
+          </p>
+
+          <p class="w3-large"> 
+          A dropdown menu will list the ID numbers of all the volunteers. When a volunteer ID is chosen from the dropdown menu, that person's demographics information, such as location, gender and age will be displayed.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="row">
+      
+      <div class="col-md-4 top-buffer">
+
+        <div id="bar-description" class="w3-container w3-cursive">
+        <h2 class="w3-cursive"> Horizontal Bar Chart</h2>
+        <p class="w3-large">
+          This horizontal bar chart displays the top 10 bacterial species (OUTs) when an individual ID is selected from dropdown menu 
+          on webpage.
+        </p>
+        <p class="w3-large">
+          The horizontal bar chart displays the "sample_values", the "otu_ids" as the labels, and the "otu_labels" as the hover text
+          for the bars on the chart. 
+        </p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-8">
+        <div id="bar"></div>
+      </div>
+
+    </div>
+    
+    <div class="row">
+
+      <div class="col-lg-8">
+        <div id="bubble"></div>
+      </div>
+
+      <div class="col-md-4 top-buffer">
+
+        <div id="bubble-description" class="w3-container w3-cursive">
+          <h2 class="w3-cursive"> Bubble Chart</h2>
+        <p class="w3-large">
+          This bubble chart displays the bacteria cultures per sample when an individual ID is selected from dropdown menu 
+          on webpage.
+        </p>
+        <p class="w3-large">
+          The bubble chart displays "otu_ids" as x-axis and marker colors, "sample_values" as y-axis and marker size, and
+          "otu_labels" as hoover text values.
+        </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      
+      <div class="col-md-4 top_buffer">
+
+        <div id="gauge-description" class="w3-container w3-cursive">
+          <h2 class="w3-cursive"> Gauge Chart</h2>
+        <p class="w3-large">
+          This gauge chart displays the weekly washing frequency's value and displays the value as a measure from 0-10 on the 
+          progress bar when an individual ID is selected from dropdown menu on webpage.
+        </p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-8">
+        <div id="gauge"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/charts.js"></script>
+
+</body>
+
+</html>
