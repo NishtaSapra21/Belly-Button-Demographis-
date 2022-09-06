@@ -1,8 +1,10 @@
-# Belly Button Biodiversity Dashboard and Interactive Charts ( https://nishtasapra21.github.io/Plotly-Charts/)
+# Belly Button Biodiversity Dashboard and Interactive Charts 
 
 ## Purpose
 
 This analysis builds  __“Belly Button Biodiversity  Dashboard”__ and __“Interactive Charts”__ to explore the dataset having volunteers’  navel bacterial samples from across the country using  Plotly, JavaScript, D3.js HTML and CSS.
+
+Please check Github page for this repo. ( https://nishtasapra21.github.io/Plotly-Charts/)
 
 ## Results 
 
