@@ -9,6 +9,9 @@ This analysis builds  __“Belly Button Biodiversity  Dashboard”__ and __“In
 * Demographic Dashboard
 
     A dropdown menu will list the ID numbers of all the volunteers. When a volunteer ID is chosen from the dropdown menu, that person's demographics information, such     as location, gender and age will be displayed.
+    
+    ![demographic_data](https://user-images.githubusercontent.com/107717882/188551369-f6b16e82-2848-48a8-9b0d-29a906ea5bb2.png)
+ 
 
 * Horizontal Bar Chart
 
